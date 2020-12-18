@@ -29,9 +29,9 @@ function List() {
                 <TableContainer component={Paper}>
                     <Table>
                         <TableHead style={{ backgroundColor: '#b8bfd1' }}>
-                            <TableCell>Username</TableCell>
-                            <TableCell>Name</TableCell>
-                            <TableCell>email</TableCell>
+                            <TableCell><b>Username</b></TableCell>
+                            <TableCell><b>Name</b></TableCell>
+                            <TableCell><b>Email</b></TableCell>
                         </TableHead>
                         <TableBody>
                             {users.map(user => (
