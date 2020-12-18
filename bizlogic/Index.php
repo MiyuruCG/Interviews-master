@@ -1,5 +1,8 @@
-<!-- below code was taken from 
-    https://www.techiediaries.com/php-react-rest-api-crud-tutorial/
+<!-- 
+    Reference: 
+    below code was taken from 
+    Date: 18/12/2020
+    Site: https://www.techiediaries.com/php-react-rest-api-crud-tutorial/
  -->
 
 
@@ -7,7 +10,7 @@
 
 $host = "localhost"; 
 $user = "root"; 
-$password = "trinitymiyuru"; 
+$password = "DATABASE PASSWORD"; 
 $dbname = "Exam"; 
 $id = '';
 
@@ -24,15 +27,6 @@ switch ($method) {
     case 'GET':
       $sql = "select * from User"; 
       break;
-    // case 'POST':
-    //   $name = $_POST["name"];
-    //   $email = $_POST["email"];
-    //   $country = $_POST["country"];
-    //   $city = $_POST["city"];
-    //   $job = $_POST["job"];
-
-    //   $sql = "insert into contacts (name, email, city, country, job) values ('$name', '$email', '$city', '$country', '$job')"; 
-    //   break;
 }
 
 // run SQL statement

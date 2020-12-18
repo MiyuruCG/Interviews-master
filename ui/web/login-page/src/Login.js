@@ -1,8 +1,16 @@
 import React from "react";
-import { Paper } from '@material-ui/core';
-import { Image, Container, Col, Row, } from 'react-bootstrap';
+import { Paper, Button } from '@material-ui/core';
+import { Container, Row } from 'react-bootstrap';
 
+//Login page. 
+//this will not validate any user information 
+//by clicking on the submit button you will be navigated to the List page
 function Login() {
+
+    const checkLogin = () => {
+
+    }
+
     return (
         <div>
             <Paper style={{
@@ -19,6 +27,7 @@ function Login() {
                                 type="text"
                                 name="Username"
                                 placeholder="Username"
+
                             />
                         </Row>
                         <Row>
@@ -29,9 +38,15 @@ function Login() {
                             />
                         </Row>
                         <Row>
-                            <button
-                                type="submit"
-                            >Submit</button>
+
+                            <div style={{ padding: 20 }}>
+                                <Button variant="contained" color="primary"
+                                    type="submit"
+                                    onClick={checkLogin}>
+                                    Submit
+                            </Button>
+                            </div>
+
                         </Row>
 
                     </form>
